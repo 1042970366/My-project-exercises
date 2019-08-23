@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 要求 当前网页 使用 IE浏览器 最高版本的内核 来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 视口的设置：视口的宽度和设备一致，默认的缩放比例和PC端一致，用户不能自行缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>阿里百秀项目</title>
+
+    <!-- Bootstrap 的文件引入 已经有初始化文件 Normalize.css-->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/baixiu.css">
+
+    <!--解决ie9以下浏览器对 html5新增标签的不识别，并导致CSS不起作用的问题-->
+    <!--解决ie9以下浏览器对 css3 Media Query  的不识别 -->
+
+    <!-- 条件注释:小于IE9的版本 -->
+    <!--[if lt IE 9]>
+            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- 左侧 -->
+            <div class="col-md-2 left">
+                <header>
+                    <a href="#" class="top">
+                        <img src="./imgs/logo.png" alt="" class="hidden-xs">
+                        <span class="visible-xs">阿里百秀</span>
+                    </a>
+                    <nav class="clearfix">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-th-large"></span> 生活馆</a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-th-large"></span> 生活馆</a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-th-large"></span> 生活馆</a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-th-large"></span> 生活馆</a>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-th-large"></span> 生活馆</a>
+                    </nav>
+                </header>
+            </div>
+
+
+            <!-- 中间 -->
+
+            <div class="col-md-7 mid">
+                <div class="imgs clearfix">
+                    <a href="#">
+                        <img src="./uploads/gaotong.jpg" alt="">
+                        <span>中国5G让高通CEO吃惊 ：原以为会晚5到10年</span>
+                    </a>
+                    <a href="#">
+                        <img src="./uploads/pengci.gif" alt="">
+                        <span>尴尬！男子碰瓷碰上警车，民警：你先抬头看看这是啥车...</span>
+                    </a>
+                    <a href="#">
+                        <img src="./uploads/jd.jpg" alt="">
+                        <span>阿里不用微信，京东不用支付宝，拼多多笑着说：我都用</span>
+                    </a>
+                    <a href="#">
+                        <img src="./uploads/5g.jpg" alt="">
+                        <span>定了！9月1日5G正式商用，网友最关心到底要花多少钱</span>
+                    </a>
+                    <a href="#">
+                        <img src="./uploads/huawei.jpg" alt="">
+                        <span>揭秘真实的华为大学：一所你不得不了解的企业“黄埔军校”</span>
+                    </a>
+                </div>
+
+
+
+                <!-- news -->
+                <div class="news">
+                    <div class="one">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h3>
+                                    尴尬！男子碰瓷碰上警车，民警：你先抬头看看这是啥车...
+                                </h3>
+                                <p class="text-muted hidden-xs">alibaixiu 发布于 2019-8-3</p>
+                                <p class="hidden-xs">开车在路上，偶尔遇到花样百出的碰瓷套路，让司机们真是防不胜防!河北邯郸一名男子，骑着电瓶车开启了碰瓷之旅，只可惜“出师不利”，第一次就遭遇了碰瓷事业的“滑铁卢”……</p>
+                                <p class="text-muted">
+                                    阅读（3306） 评论（36）赞（96）
+                                    <span class="hidden-xs"> 标签：科技/华为/互联网/趣味生活</span>
+                                </p>
+
+                            </div>
+                            <div class="col-sm-3 hidden-xs">
+                                <img src="./uploads/pengci.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3>
+                                        华为有望2020年继续蝉联榜首
+                                    </h3>
+                                    <p class="text-muted hidden-xs">alibaixiu 发布于 2019-8-3</p>
+                                    <p class="hidden-xs">华为公司董事长梁华表示在业绩发布会上表示：“五月份之前，华为收入增长较快，‘实体清单’之后，因为存在市场惯性，也取得了增长。华为面临的困难依然很大，这些困难，可能会暂时影响我们的前进节奏，但不会改变前进方向。”</p>
+                                    <p class="text-muted">
+                                        阅读（3306） 评论（36）赞（96）
+                                        <span class="hidden-xs"> 标签：科技/华为/互联网/趣味生活</span>
+                                    </p>
+    
+                                </div>
+                                <div class="col-sm-3 hidden-xs">
+                                    <img src="./uploads/huawei.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- 右侧 -->
+            <div class="col-md-3 right">
+                <a href="#">
+                    <img src="./uploads/zgboke.jpg" alt="">
+                </a>
+                <div class="box">
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <h4>欢迎加入中国博客联盟</h4>
+                        <p>这里收录中国各个领域的优秀博客，是一个全人工编辑的开放式博客联盟和交流展示平台...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

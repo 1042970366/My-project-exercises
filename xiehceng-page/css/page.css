@@ -1,0 +1,157 @@
+body{
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 14px;
+    background: #ccc;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/* 搜索区 */
+header{
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    background-color: #f6f6f6;
+    position: fixed;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+}
+header .search{
+    flex: 1;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    position: relative;
+    line-height: 24px;
+    padding-left: 30px;
+}
+header .search::before{
+    content:'';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left:5px;
+    background:url(../imgs/sprite.png) no-repeat -59px -279px;
+    background-size: 104px;
+}
+header .user{
+    width:44px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+header .user .img{
+    width: 23px;
+    height: 23px;
+    background: url('../imgs/sprite.png') no-repeat -59px -194px;
+    background-size: 104px;
+    margin: 2px 0;
+}
+
+/* banner */
+.banner{
+    padding-top: 45px;
+}
+.banner a{
+
+}
+.banner a img{
+    width: 100%;
+}
+/* 导航区1 */
+.nav-1{
+    height: 64px;
+    display: flex;
+    background: #fff;
+    margin: 3px 5px;
+    border-radius: 5px;
+}
+.nav-1 a{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+.nav-1 a .img{
+    width: 32px;
+    height: 32px;
+    background: url(../imgs/localnav_bg.png) no-repeat 0 0;
+    background-size: 100%;
+    margin: 5px 0;
+}
+.nav-1 a span{
+
+}
+/* 导航区2 */
+.nav-2{
+    height: 128px;
+    display: flex;
+    background: #fff;
+    margin: 3px 5px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.nav-2 a{
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+.nav-2 a .img{
+    width: 32px;
+    height: 32px;
+    background: url(../imgs/localnav_bg.png) no-repeat 0 0;
+    background-size: 100%;
+    margin: 5px 0;
+}
+.nav-2 a span{
+
+}
+/* 大导航 */
+nav{
+    border-radius: 10px;
+    overflow:hidden;
+}
+nav .main{
+    height: 88px;
+    display: flex;
+    background: -webkit-linear-gradient(30deg,red,blue);
+}
+nav .main .box{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+nav .main .box:nth-child(n+2){
+    border-left: 1px solid #fff;
+}
+nav .main .box a{
+    flex:1;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+nav .main .box a:nth-child(2){
+    border-top: 1px solid #fff;
+}
+nav .main .box:nth-child(1) a{
+    background: url(../imgs/hotel.png) no-repeat;
+    background-size: 60%;
+    background-position: center bottom;
+}
+nav .main:nth-child(2){
+    margin:5px 0;
+}

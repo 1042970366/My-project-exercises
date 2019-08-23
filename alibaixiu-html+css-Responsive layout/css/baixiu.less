@@ -1,0 +1,194 @@
+ @media screen and (min-width:1280px) {
+     .container {
+         width: 1280px;
+     }
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: none;
+ }
+
+ //  左侧----------------------------------
+ .left {
+     padding-left: 0;
+
+     header {
+         .top {
+             display: block;
+             background: blue;
+             text-align: center;
+
+             img {
+                 //  width: 100%;
+                 max-width: 100%; //最大宽度为图片本身宽高
+
+             }
+
+             span {
+                 display: block;
+                 //  height: 50px;
+                 line-height: 50px; //直接给line-height也可以撑起高度
+                 color: #fff;
+                 font-size: 20px;
+             }
+         }
+
+         nav {
+             border-bottom: 1px solid #000;
+
+             a {
+                 display: block;
+                 height: 50px;
+                 background: #ccc;
+                 line-height: 50px;
+                 color: #000;
+                 padding-left: 35px;
+
+                 &:hover {
+                     background: #fff;
+                 }
+             }
+
+         }
+     }
+ }
+
+ //向下布局一样的话，需自己手动写媒体查询
+ //将上面的嵌套结构复制 目的是为了样式上的权重相同
+ @media screen and (max-width:991px) {
+     .left {
+
+         header {
+
+             nav {
+                 margin-bottom: 10px;
+
+                 a {
+                     float: left;
+                     width: 20%;
+
+                 }
+
+             }
+         }
+     }
+ }
+
+ // 中间区-------------------------------
+ .mid {
+     .imgs {
+         border-bottom: 1px solid #999;
+
+         a {
+             float: left;
+             width: 25%;
+             height: 133px;
+             border-left: 10px solid #fff;
+             border-bottom: 10px solid #fff;
+             position: relative;
+
+             img {
+                 width: 100%;
+                 height: 100%;
+             }
+
+             span {
+                 position: absolute;
+                 left: 0;
+                 bottom: 0;
+                 width: 100%;
+                 height: 44px;
+                 background: rgba(0, 0, 0, 0.6);
+                 color: #fff;
+                 font-size: 12px;
+                 padding: 6px;
+
+             }
+
+         }
+
+         a:nth-child(1) {
+             width: 50%;
+             height: 266px;
+             border-left: 0px solid #fff;
+
+             span {
+                 font-size: 24px;
+             }
+         }
+     }
+
+
+
+     //news
+     .news {
+         .one {
+             border-bottom: 1px solid #ccc;
+
+             img {
+                 margin-top: 10px;
+                 width: 100%;
+             }
+         }
+     }
+ }
+
+
+
+ //小于768px，图片布局变化
+ @media screen and (max-width:767px) {
+     .mid {
+         .imgs {
+
+             a {
+                 width: 50%;
+                border-left: 0;
+
+             }
+
+             a:nth-child(1) {
+                 width: 100%;
+             }
+             a:nth-child(2n){
+                 border-right: 5px solid #fff;
+             }
+             a:nth-child(2n+3){
+                border-left: 5px solid #fff;
+            }
+         }
+
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ //右侧-------------------------------------
+ .right {
+     img {
+         width: 100%;
+     }
+
+     .box {
+         .btn {
+             border-radius: 0;
+         }
+
+         border: 1px solid #000;
+         margin-top: 10px;
+         padding: 0 10px;
+
+     }
+ }
